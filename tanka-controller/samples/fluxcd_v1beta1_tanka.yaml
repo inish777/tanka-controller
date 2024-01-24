@@ -1,0 +1,12 @@
+apiVersion: fluxcd.inishev.dev/v1beta1
+kind: Tanka
+metadata:
+  labels:
+    app.kubernetes.io/name: tanka
+    app.kubernetes.io/instance: tanka-sample
+    app.kubernetes.io/part-of: tanka-controller-2
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: tanka-controller-2
+  name: tanka-sample
+spec:
+  # TODO(user): Add fields here

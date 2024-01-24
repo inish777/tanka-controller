@@ -1,0 +1,9 @@
+namePrefix: tanka-
+namespace: flux-system
+resources:
+- manager.yaml
+images:
+- name: controller
+  newName: 656026053728.dkr.ecr.eu-central-1.amazonaws.com/tanka-controller
+  newTag: master-d8fe59ca-1697665220
+

@@ -1,0 +1,27 @@
+# permissions for end users to view tankas.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: tanka-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: tanka-controller-2
+    app.kubernetes.io/part-of: tanka-controller-2
+    app.kubernetes.io/managed-by: kustomize
+  name: tanka-viewer-role
+rules:
+- apiGroups:
+  - fluxcd.inishev.dev
+  resources:
+  - tankas
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - fluxcd.inishev.dev
+  resources:
+  - tankas/status
+  verbs:
+  - get

@@ -1,0 +1,6 @@
+## Append samples of your project ##
+resources:
+- fluxcd_v1beta1_tanka.yaml
+- source.toolkit.fluxcd.io_v1_gitrepositorywatcher.yaml
+- source.toolkit.fluxcd.io_v1_gitrepository.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples
